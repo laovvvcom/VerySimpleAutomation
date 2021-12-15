@@ -2,10 +2,11 @@
 # very simple automation script  
 Developed by Huangxiaocheng  
 # Third Party Library Requirements
-· pytesseract  
+· pytesseract==0.3.4  
 · pillow  
 · lackey  
 · pyautogui  
 · ddt  
-· xlrd  
+· xlrd==1.2.0  
 · BeautifulReport  
+# Introduction
