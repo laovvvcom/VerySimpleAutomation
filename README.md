@@ -1,2 +1,2 @@
 # VerySimpleAutomation
-very simple automation script
+# very simple automation script
