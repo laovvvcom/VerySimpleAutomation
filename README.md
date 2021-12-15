@@ -13,7 +13,7 @@ Developed by Huangxiaocheng
 By recognizing images, operating software, asserting, separating code and test data, writing efficiency is improved, and subsequent maintenance costs are reduced.
 # 介绍
 通过识别图像，对软件进行操作，断言，将代码和测试数据分离，提高编写效率，并降低后续的维护成本。
-# files introduction
+# Files Introduction
 [action]folder--->Store operational pictures  
 [expectation]folder--->Store assertive pictures  
 [globalassertion]folder--->Store global assertive pictures  
@@ -23,3 +23,4 @@ By recognizing images, operating software, asserting, separating code and test d
 [expectation]文件夹--->存放断言性图片  
 [globalassertion]文件夹--->存放全局断言性图片  
 [ExcelTestData]xlsx表--->存放测试数据，字段包括"用例描述"，"操作文件夹编号"，"期待文件夹编号"，"期待图片编号(默认填1)"，"操作延迟(默认填1)"  
+# Flow Chart
