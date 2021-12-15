@@ -1,5 +1,5 @@
 # VerySimpleAutomation
-# very simple automation script  
+# 一个极简自动化测试脚本  
 Developed by Huangxiaocheng  
 # Third Party Library Requirements
 · pytesseract==0.3.4  
