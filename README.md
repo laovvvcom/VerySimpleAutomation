@@ -10,9 +10,9 @@ Developed by Huangxiaocheng
 · xlrd==1.2.0  
 · BeautifulReport  
 # Introduction
-By recognizing images, operating software, asserting, separating code and test data, writing efficiency is improved, and subsequent maintenance costs are reduced.
+By recognizing images, operating software, asserting, finally enter the test report，separating code and test data, writing efficiency is improved, and subsequent maintenance costs are reduced.
 # 介绍
-通过识别图像，对软件进行操作，断言，将代码和测试数据分离，提高编写效率，并降低后续的维护成本。
+通过识别图像，对软件进行操作，断言，最后输入测试报告，将代码和测试数据分离，提高编写效率，并降低后续的维护成本。
 # Files Introduction
 [action]folder--->Store operational pictures  
 [expectation]folder--->Store assertive pictures  
