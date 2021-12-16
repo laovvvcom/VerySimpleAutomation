@@ -24,3 +24,4 @@ By recognizing images, operating software, asserting, separating code and test d
 [globalassertion]文件夹--->存放全局断言性图片  
 [ExcelTestData]xlsx表--->存放测试数据，字段包括"用例描述"，"操作文件夹编号"，"期待文件夹编号"，"期待图片编号"，"操作延迟"  
 # Flow Chart
+![image](https://user-images.githubusercontent.com/33822034/146296392-547258ec-c9df-4881-ab82-7459acc937a9.png)  
