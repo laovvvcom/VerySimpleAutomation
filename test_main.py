@@ -1,13 +1,14 @@
 # coding = utf-8
 from Module.pymethods_lackey import method_lackey
+from Module.pymethods_autogui import method_autogui
 import unittest
 import lackey
 import pyautogui
 import time
-import pytesseract
-from PIL import Image
+import os
 from ddt import ddt, data, unpack
 from xlrd import open_workbook
+
 # 自动化保护措施，鼠标置顶左上角暂停自动化
 pyautogui.FAILSAFE = True
 
@@ -33,23 +34,37 @@ class MyTestCase(unittest.TestCase):
     @data(*getExcelTestData())
     # @data(["公式测试计划", 1])
     @unpack
-    def test_case(self, case, *pathid):
+    def test_case(self, case, *content):
         try:
-            i = 0
-            t = int(pathid[3])
-            while True:
-                i += 1
-                res = pytesseract.image_to_string(Image.open("./action/case%s/%s.png" % (pathid[0], i)))
-                if res != "The end":
-                    method_lackey().leftclick("./action/case%s/%s.png" % (pathid[0], i))
-                    time.sleep(t)
-                else:
-                    r = lackey.Screen()
-                    self.assertTrue(
-                        r.exists(lackey.Pattern(target="./expectation/case%s/1.png" % pathid[1]).similar(0.85)))
-                    self.assertTrue(
-                        r.exists(lackey.Pattern(target="./expectation/case%s/%s.png" % (pathid[1], pathid[2])).similar(0.85)))
-                    break
+            img_list = os.listdir("./action/case%s" % (content[0]))
+            dir_list = sorted(img_list,
+                              key=lambda x: os.path.getmtime(os.path.join("./action/case%s", x) % (content[0])))
+            t = int(content[3])
+            casenum = 3
+            while casenum <= 10004:
+                for i in dir_list:
+                    ni = i.split(".")[0]
+                    if ni.isdigit():
+                        method_lackey().leftclick("./action/case%s/%s.png" % (content[0], ni))
+                        time.sleep(t)
+                        continue
+                    elif ni.islower():
+                        casenum += 1
+                        method_lackey().leftclick("./action/case%s/%s.png" % (content[0], ni))
+                        time.sleep(t)
+                        method_autogui().copy(content[casenum])
+                        time.sleep(t)
+                        continue
+                    else:
+                        r = lackey.Screen()
+                        self.assertTrue(
+                            r.exists(lackey.Pattern(target="./expectation/case%s/1.png" % content[1]).similar(0.85)))
+                        self.assertTrue(
+                            r.exists(
+                                lackey.Pattern(target="./expectation/case%s/%s.png" % (content[1], content[2])).similar(
+                                    0.85)))
+                break
+
         except Exception as e:
             raise Exception(e)
 
