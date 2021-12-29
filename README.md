@@ -12,3 +12,9 @@ Developed by Huangxiaocheng
 测试数据与代码分离，通过图像识别进行自动化测试  
 Test data and code are separated, and automated testing is carried out through image recognition  
 # Detailed description  
+Folder:  
+· action-->case folder and its operation pictures  
+· expectation-->case folders and pictures of expected results  
+File:  
+· ExcelTestData.xlsx-->test data  
+# How to use  
