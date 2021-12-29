@@ -9,8 +9,8 @@ Developed by Huangxiaocheng
 · xlrd==1.2.0  
 · beautifulreport  
 # Introduction  
-测试数据与代码分离，通过图像识别进行自动化测试  
-Test data and code are separated, and automated testing is carried out through image recognition  
+测试数据与代码分离，通过图像识别进行自动化测试，并生成测试报告  
+Separate test data from code, perform automated testing through image recognition, and generate test reports    
 # Detailed description  
 Folder:  
 · action-->case folder and its operation pictures  
@@ -18,3 +18,5 @@ Folder:
 File:  
 · ExcelTestData.xlsx-->test data  
 # How to use  
+python run.py  
+# Working principle  
