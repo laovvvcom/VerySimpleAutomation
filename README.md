@@ -20,3 +20,4 @@ File:
 # How to use  
 python run.py  
 # Working principle  
+![image](https://user-images.githubusercontent.com/33822034/147649842-0c3e14a3-da1c-4488-b774-190e8a8d1401.png)
