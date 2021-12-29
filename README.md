@@ -17,7 +17,10 @@ Folder:
 · expectation-->case folders and pictures of expected results  
 File:  
 · ExcelTestData.xlsx-->test data  
-# How to use 
+# How to use  
+对你想要操作的按钮或者输入框进行截图  
+然后  
+运行python run.py  
 Take a screenshot of the button or input box you want to operate  
 and  
 python run.py  
