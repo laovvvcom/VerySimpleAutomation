@@ -17,7 +17,9 @@ Folder:
 · expectation-->case folders and pictures of expected results  
 File:  
 · ExcelTestData.xlsx-->test data  
-# How to use  
+# How to use 
+Take a screenshot of the button or input box you want to operate  
+and  
 python run.py  
 # Working principle  
 ![image](https://user-images.githubusercontent.com/33822034/147650134-d45711f1-52cd-4948-aa18-c562047374f9.png)
